@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/todo_component.dart';
+import 'package:flutter_app/components/todo_component.dart';
+import 'package:flutter_app/domains/todo.dart';
 
 typedef OnDoneChange(bool, int);
 
 class TodoListComponent extends StatelessWidget {
-  final List<Todo> todos;
+  final Todos todos;
   final OnDoneChange onDoneChange;
   TodoListComponent({ this.todos, this.onDoneChange });
 

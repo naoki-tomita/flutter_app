@@ -1,14 +1,5 @@
 import 'package:flutter/material.dart';
-
-class Todo {
-  final String description;
-  final bool done;
-  Todo(this.description, this.done);
-
-  setDone(bool done) {
-    return Todo(description, done);
-  }
-}
+import 'package:flutter_app/domains/todo.dart';
 
 typedef OnDoneChange(bool value);
 
