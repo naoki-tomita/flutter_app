@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title, key: Key("title")),
       ),
       body: TodoListComponent(todos: _todos, onDoneChange: (val, i) => setState(() => _todos[i] = _todos[i].setDone(val))),
       bottomNavigationBar: Container(
